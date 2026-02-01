@@ -108,6 +108,7 @@ jobs:
                 -G Ninja \
                 -S ../test/cmake_subdir_test \
                 -B build
+
           cmake --build build
           ctest --test-dir build -V
           rm -rf build
