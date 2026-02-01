@@ -95,8 +95,7 @@ jobs:
           rm -rf __build
 
       - name: Run modules tests
-        if: false
-        # if: ${{matrix.toolset == 'clang-19'}}
+        if: ${{matrix.toolset == 'clang-19'}}
         run: |
           cd ../boost-root/libs/pfr
           mkdir build_module
